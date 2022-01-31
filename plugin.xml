@@ -89,14 +89,7 @@
         <header-file src="platforms/ios/BFCDVSDKBugfender.h" />
         <source-file src="platforms/ios/BFCDVSDKBugfender.m" />
 
-        <podspec>
-          <config>
-            <source url="https://cdn.cocoapods.org/"/>
-          </config>
-          <pods use-frameworks="true">
-                <pod name="BugfenderSDK" spec="~> 1.9.2" />
-            </pods>
-        </podspec>
+        <framework src="BugfenderSDK" type="podspec" spec="~> 1.9.2" />
         <hook type="before_plugin_install" src="scripts/check_ios_target.js"/>
     </platform>
 
